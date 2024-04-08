@@ -98,8 +98,8 @@ img{
 
 
 .cactus {
-     width: 30px; /* Ajustado */
-    height: 60px; /* Ajustado */
+     width: 30px; 
+    height: 60px; 
 
     position: absolute;
     bottom: 16px;
@@ -107,14 +107,14 @@ img{
     z-index: 1;
 
     background: url(kitty/cactus.png) no-repeat;
-    background-size: 30px 60px; /* Ajustado */
+    background-size: 30px 60px; 
 }
         .cactus2 {
-width: 65px; /* Ajustado */
-height: 45px; /* Ajustado */
+width: 65px; 
+height: 45px; 
 
 background: url(kitty/piedra.png) no-repeat;
-background-size: 65px 45px; /* Ajustado */
+background-size: 65px 45px; 
 }
 
 .nube{
@@ -181,7 +181,7 @@ background-size: 65px 45px; /* Ajustado */
         background-position: 0 0;
     }
     to {
-        background-position: -336px 0; /* Ajustado */
+        background-position: -336px 0; 
     }
 }
 @font-face {
@@ -439,7 +439,7 @@ function DetectarColision() {
     for (var i = 0; i < obstaculos.length; i++) {
         if(obstaculos[i].posX > kittyPosX + kitty.clientWidth) {
             //EVADE
-            break; //al estar en orden, no puede chocar con más
+            break; 
         }else{
             if(IsCollision(kitty, obstaculos[i], 10, 30, 15, 20)) {
                 GameOver();
@@ -511,9 +511,6 @@ function Saltar(){
         kitty.classList.remove("kitty-corriendo");
     }
 }
-
-
-
 </script>
 </body>
 </html>
