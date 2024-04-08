@@ -481,7 +481,36 @@ function GameOver() {
 function ReiniciarJuego() {
     location.reload();
 }
+function Start() {
+    gameOver = document.querySelector(".game-over");
+    reiniciarBtn = document.querySelector(".reiniciar");
+    suelo = document.querySelector(".suelo");
+    contenedor = document.querySelector(".contenedor");
+    textoScore = document.querySelector(".score");
+    kitty = document.querySelector(".kitty");
+    document.addEventListener("keydown", HandleKeyDown);
+    reiniciarBtn.addEventListener("click", ReiniciarJuego);
+    // Agregamos el event listener para pantallas táctiles
+    contenedor.addEventListener("touchstart", HandleTouchStart);
+}
 
+function HandleTouchStart(ev) {
+    Saltar();
+}
+
+function HandleKeyDown(ev){
+    if(ev.keyCode == 32){
+        Saltar();
+    }
+}
+
+function Saltar(){
+    if(kittyPosY === sueloY){
+        saltando = true;
+        velY = impulso;
+        kitty.classList.remove("kitty-corriendo");
+    }
+}
 
 
 
