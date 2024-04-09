@@ -147,7 +147,7 @@ background-size: 65px 45px;
             display: none;
             position: absolute;
             width: 100%;
-            top: 40%;
+            top: 50%;
             text-align: center;
             color: #f52c2c;
             font-weight: 900;
@@ -160,7 +160,7 @@ background-size: 65px 45px;
         .reiniciar {
             display: none;
             position: absolute;
-            top: 63%;
+            top: 82%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: #4CAF50;
@@ -192,6 +192,25 @@ background-size: 65px 45px;
     url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.svg#Hello Kitty")format("svg");
 }
+@media (max-width: 480px) {
+    /* Estilos para pantallas pequeñas (móviles) */
+    .contenedor {
+        height: 30vh;
+    }
+    .score {
+        font-size: 6vmin;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Estilos para pantallas más grandes (tablets y escritorio) */
+    .contenedor {
+        width: 70vw;
+        height: 50vh;
+    }
+}
+
+
 
     </style>
 </head>
@@ -415,13 +434,13 @@ function MoverNubes() {
 function GanarPuntos() {
     score++;
     textoScore.innerText = score;
-    if(score == 5){
+    if(score == 6){
         gameVel = 1.5;
         contenedor.classList.add("mediodia");
-    }else if(score == 10) {
+    }else if(score == 15) {
         gameVel = 2;
         contenedor.classList.add("tarde");
-    } else if(score == 20) {
+    } else if(score == 30) {
         gameVel = 3;
         contenedor.classList.add("noche");
     }
