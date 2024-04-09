@@ -128,51 +128,50 @@ background-size: 65px 45px;
     background-size: 92px 26px;
 }
 
-.score{
-    width: 100px;
-    height: 30px;
+.score {
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            z-index: 10;
+            color: #ffffff;
+            /* text-shadow: 0.1em 0.1em #3b3b3b; */ /* para ponerle sombra a los numeros  */
+            font-family: "kitty ?";
+            font-size: 50px;
+            font-weight: bold;
+            text-align: right;
+        }
 
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    z-index: 10;
+        .game-over {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            text-align: center;
+            color: #f52c2c;
+            font-weight: 900;
+            font-size: 70px;
+            font-style: normal;
+            text-shadow: 0.1em 0.1em #3b3b3b;
+            font-size: 2pc;
+        }
 
-    color: #1d1d1d;
-    font-family: "kitty ?";
-    font-size: 30px;
-    font-weight: bold;
-    text-align: right;
-}
-
-.game-over{
-    display: none;
-
-    position: absolute;
-    width: 100%;
-    top: 40%;
-
-    text-align: center;
-    color: #0d0e0d;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 2pc;
-
-}
-.reiniciar {
-    display: none;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-}
+        .reiniciar {
+            display: none;
+            position: absolute;
+            top: 72%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
 
 
