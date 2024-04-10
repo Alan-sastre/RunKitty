@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Hello kitty</title>
     <link rel="shortcut icon" href="kitty/Icono.png">
     <link href="https://db.onlinewebfonts.com/c/cfbff24b82c3a6cad7f62ce4420d05e2?family=kitty+%3F" rel="stylesheet">
@@ -172,7 +172,15 @@ background-size: 65px 45px;
             cursor: pointer;
             border-radius: 4px;
         }
+        .column {
+  width: 100%;
+}
 
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
 
 
 @keyframes animarkitty {
@@ -441,8 +449,13 @@ function GanarPuntos() {
         gameVel = 2;
         contenedor.classList.add("tarde");
     } else if(score == 30) {
-        gameVel = 3;
+        gameVel = 2.5;
         contenedor.classList.add("noche");
+    }else if(score == 70){
+        gameVel = 3;
+        contenedor.classList.add("mediodia");
+
+        
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
 }
