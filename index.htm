@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="kitty/Icono.png">
     <link href="https://db.onlinewebfonts.com/c/cfbff24b82c3a6cad7f62ce4420d05e2?family=kitty+%3F" rel="stylesheet">
     <style>
-
+@import url(https://db.onlinewebfonts.com/c/cfbff24b82c3a6cad7f62ce4420d05e2?family=kitty+%3F);
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +18,7 @@
 }
 
 body {
-            
+
             background:#f9add8;
             display: flex;
             flex-direction: column;
@@ -35,14 +35,14 @@ body {
 } */
 img{
     position: relative;
-    max-width: 500px; 
+    max-width: 500px;
 }
 
 .contenedor {
     width: 920px;
     height: 280px;
     margin: 0 auto;
-    
+
     position: relative;
     border: 5px solid rgb(255, 255, 255);
     background: linear-gradient(#0ad4f8, transparent) #f8f8f8ec;/*linear-gradient(#90ebff, white);*/
@@ -63,14 +63,14 @@ img{
 }
 
 .kitty {
-    width: 84px; 
-    height: 84px; 
+    width: 84px;
+    height: 84px;
     position: absolute;
     bottom: 22px;
     left: 42px;
     z-index: 2;
     background: url(kitty/correoHellokitty.png) no-repeat 0 0;
-    background-size: 336px 84px; 
+    background-size: 336px 84px;
 }
 
 
@@ -79,7 +79,7 @@ img{
 }
 
 .kitty-estrellado {
-    background-position: -252px 0; 
+    background-position: -252px 0;
 }
 
 .suelo {
@@ -98,8 +98,8 @@ img{
 
 
 .cactus {
-     width: 30px; 
-    height: 60px; 
+     width: 30px;
+    height: 60px;
 
     position: absolute;
     bottom: 16px;
@@ -107,14 +107,14 @@ img{
     z-index: 1;
 
     background: url(kitty/cactus.png) no-repeat;
-    background-size: 30px 60px; 
+    background-size: 30px 60px;
 }
         .cactus2 {
-width: 65px; 
-height: 45px; 
+width: 65px;
+height: 45px;
 
 background: url(kitty/piedra.png) no-repeat;
-background-size: 65px 45px; 
+background-size: 65px 45px;
 }
 
 .nube{
@@ -137,7 +137,6 @@ background-size: 65px 45px;
             z-index: 10;
             color: #ffffff;
             /* text-shadow: 0.1em 0.1em #3b3b3b; */ /* para ponerle sombra a los numeros  */
-            font-family: "kitty ?";
             font-size: 50px;
             font-weight: bold;
             text-align: right;
@@ -188,17 +187,17 @@ background-size: 65px 45px;
         background-position: 0 0;
     }
     to {
-        background-position: -336px 0; 
+        background-position: -336px 0;
     }
 }
 @font-face {
-    font-family: "Hello Kitty";
-    src: url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.eot");
-    src: url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/0ed2db0dfeb9f70b2d43ee68f75999f8.svg#Hello Kitty")format("svg");
+    font-family: "kitty ?";
+    src: url("https://db.onlinewebfonts.com/t/cfbff24b82c3a6cad7f62ce4420d05e2.eot");
+    src: url("https://db.onlinewebfonts.com/t/cfbff24b82c3a6cad7f62ce4420d05e2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cfbff24b82c3a6cad7f62ce4420d05e2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cfbff24b82c3a6cad7f62ce4420d05e2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/cfbff24b82c3a6cad7f62ce4420d05e2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cfbff24b82c3a6cad7f62ce4420d05e2.svg#kitty ?")format("svg");
 }
 @media (max-width: 480px) {
     /* Estilos para pantallas pequeñas (móviles) */
@@ -252,7 +251,7 @@ var deltaTime = 0;
 if(document.readyState === "complete" || document.readyState === "interactive"){
     setTimeout(Init, 1);
 }else{
-    document.addEventListener("DOMContentLoaded", Init); 
+    document.addEventListener("DOMContentLoaded", Init);
 }
 
 function Init() {
@@ -276,7 +275,7 @@ var impulso = 900;
 var gravedad = 2500;
 
 var kittyPosX = 42;
-var kittyPosY = sueloY; 
+var kittyPosY = sueloY;
 
 var sueloX = 0;
 var velEscenario = 1280/3;
@@ -317,7 +316,7 @@ function Start() {
 
 function Update() {
     if(parado) return;
-    
+
     Moverkittysaurio();
     MoverSuelo();
     DecidirCrearObstaculos();
@@ -346,7 +345,7 @@ function Saltar(){
 function Moverkittysaurio() {
     kittyPosY += velY * deltaTime;
     if(kittyPosY < sueloY){
-        
+
         TocarSuelo();
     }
     kitty.style.bottom = kittyPosY+"px";
@@ -409,7 +408,7 @@ function CrearNube() {
     nube.posX = contenedor.clientWidth;
     nube.style.left = contenedor.clientWidth+"px";
     nube.style.bottom = minNubeY + Math.random() * (maxNubeY-minNubeY)+"px";
-    
+
     nubes.push(nube);
     tiempoHastaNube = tiempoNubeMin + Math.random() * (tiempoNubeMax-tiempoNubeMin) / gameVel;
 }
@@ -455,7 +454,7 @@ function GanarPuntos() {
         gameVel = 3;
         contenedor.classList.add("mediodia");
 
-        
+
     }
     suelo.style.animationDuration = (3/gameVel)+"s";
 }
@@ -469,7 +468,7 @@ function DetectarColision() {
     for (var i = 0; i < obstaculos.length; i++) {
         if(obstaculos[i].posX > kittyPosX + kitty.clientWidth) {
             //EVADE
-            break; 
+            break;
         }else{
             if(IsCollision(kitty, obstaculos[i], 10, 30, 15, 20)) {
                 GameOver();
